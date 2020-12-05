@@ -1,0 +1,48 @@
+Circuit: * \\Mac\Home\Desktop\sem6\EDL\ltspice_sim\LM118.asc
+
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 4.96485
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 5.08031
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+
+Date: Mon Mar 11 17:03:48 2019
+Total elapsed time: 15.000 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 251432
+traniter = 249661
+tranpoints = 68497
+accept = 47966
+rejected = 20531
+matrix size = 262
+fillins = 2107
+solver = Normal
+Thread vector: 27.1/22.2[2] 11.8/8.9[2] 13.0/10.8[2] 30.0/5.0[2]  2592/500
+Matrix Compiler1: 208.22 KB object code size  37.5/22.3/[14.6]
+Matrix Compiler2: 59.20 KB object code size  13.3/11.2/[5.6]
+

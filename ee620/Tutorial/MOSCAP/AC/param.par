@@ -1,0 +1,12 @@
+Material = "Silicon" { Insert =  "./par/Silicon.par"}
+Material = "SiO2" { Insert =  "./par/Oxide.par"}
+
+*Material = "SiliconGermanium" {Insert = "./par/SiliconGermanium.par"}	
+
+*Material = "StrainedSilicon" {Insert =  "./par/StrainedSilicon.par"}
+
+*Material = "Germanium" {  Insert = "./par/Germanium.par"}
+
+*Material = "HfO2" { Insert =  "./par/HfO2.par"}
+
+*Material = "Aluminum" { Insert =  "./par/Aluminum.par"}

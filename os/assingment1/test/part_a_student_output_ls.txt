@@ -1,0 +1,55 @@
+a.out
+autograder
+commands.txt
+dummy
+master.sh
+my_shell.c
+partb_test1.txt
+partb_test3.txt
+partb_test4.txt
+partb_testop4.txt-e
+partbtests1.txt
+readme.txt
+script-a.sh
+script-b.sh
+script-c.sh
+sshell
+tue.c
+-rwxr-xr-x  1 deveshkumar  staff  14452 Feb 15 19:31 a.out
+drwxr-xr-x  7 deveshkumar  staff    224 Feb 13 20:48 autograder
+-rw-r--r--  1 deveshkumar  staff      0 Feb 15 19:25 bash_output_cd.txt
+-rw-r--r--@ 1 deveshkumar  staff      9 Feb 15 19:25 bash_output_date.txt
+-rw-r--r--  1 deveshkumar  staff     10 Feb 15 19:25 bash_output_echo.txt
+-rw-r--r--  1 deveshkumar  staff    810 Feb 15 19:31 bash_output_ls.txt
+-rw-r--r--  1 deveshkumar  staff   3078 Feb 15 19:25 bash_output_ls.txt-e
+-rw-r--r--  1 deveshkumar  staff   3433 Feb 15 19:25 bash_output_lsissues.txt
+-rw-r--r--  1 deveshkumar  staff   3522 Feb 15 19:25 bash_output_lsissues.txt-e
+-rw-r--r--  1 deveshkumar  staff     44 Feb 15 19:25 bash_output_pwd.txt
+-rwxrwxrwx  1 deveshkumar  staff     14 Feb 15 19:31 bash_test_part_a.txt
+-rw-r--r--@ 1 deveshkumar  staff     85 Feb 15 14:09 commands.txt
+drwxr-xr-x  2 deveshkumar  staff     64 Feb 15 14:05 dummy
+-rwxr-xr-x@ 1 deveshkumar  staff    129 Feb 14 00:02 master.sh
+-rw-r--r--@ 1 deveshkumar  staff  12414 Feb 15 19:31 my_shell.c
+-rw-r--r--  1 deveshkumar  staff      0 Feb 15 19:25 part_a_student_output_cd.txt
+-rw-r--r--  1 deveshkumar  staff      0 Feb 15 19:25 part_a_student_output_cd.txt-e
+-rw-r--r--  1 deveshkumar  staff      9 Feb 15 19:25 part_a_student_output_date.txt
+-rw-r--r--  1 deveshkumar  staff      9 Feb 15 19:25 part_a_student_output_date.txt-e
+-rw-r--r--  1 deveshkumar  staff      0 Feb 15 19:25 part_a_student_output_echo.txt
+-rw-r--r--  1 deveshkumar  staff      0 Feb 15 19:25 part_a_student_output_echo.txt-e
+-rw-r--r--@ 1 deveshkumar  staff      0 Feb 15 19:31 part_a_student_output_exit.txt
+-rw-r--r--  1 deveshkumar  staff   3078 Feb 15 19:25 part_a_student_output_ls.txt-e
+-rw-r--r--  1 deveshkumar  staff   3190 Feb 15 19:25 part_a_student_output_ls_issues.txt
+-rw-r--r--  1 deveshkumar  staff   3190 Feb 15 19:25 part_a_student_output_ls_issues.txt-e
+-rw-r--r--  1 deveshkumar  staff      0 Feb 15 19:25 part_a_student_output_pwd.txt
+-rw-r--r--  1 deveshkumar  staff      0 Feb 15 19:25 part_a_student_output_pwd.txt-e
+-rw-r--r--  1 deveshkumar  staff     24 Feb 15 19:25 partb_test1.txt
+-rw-r--r--  1 deveshkumar  staff     45 Feb 15 19:25 partb_test3.txt
+-rw-r--r--  1 deveshkumar  staff     45 Feb 15 19:25 partb_test4.txt
+-rw-r--r--  1 deveshkumar  staff     25 Feb 15 19:25 partb_testop4.txt-e
+-rw-r--r--  1 deveshkumar  staff     43 Feb 15 19:25 partbtests1.txt
+-rw-r--r--@ 1 deveshkumar  staff    416 Feb 12 11:09 readme.txt
+-rwxr-xr-x@ 1 deveshkumar  staff   6977 Feb 12 11:07 script-a.sh
+-rwxr-xr-x@ 1 deveshkumar  staff   4018 Feb 15 10:55 script-b.sh
+-rwxr-xr-x@ 1 deveshkumar  staff   5541 Feb 12 11:07 script-c.sh
+-rwxr-xr-x  1 deveshkumar  staff  14452 Feb 15 19:31 sshell
+-rw-r--r--  1 deveshkumar  staff  11707 Feb 13 21:06 tue.c

@@ -1,0 +1,88 @@
+* HD
+
+File{
+   Grid      = "moscap_msh.tdr"
+   Parameter = "param.par"
+   Plot      = "moscap_des.tdr"
+   Current   = "moscap_des.plt"
+   Output    = "moscap_des.log"
+}
+Electrode{
+   { Name="gate"      Voltage=0.0 }
+   { Name="bulk"      Voltage=0.0 }
+}
+
+
+Physics{
+   Hydrodynamic(eTemperature)  
+   eQCvanDort 
+   EffectiveIntrinsicDensity( OldSlotboom )     
+   Mobility(
+      DopingDep
+      eHighFieldsaturation( CarrierTempDrive )
+      hHighFieldsaturation( GradQuasiFermi )
+      Enormal
+   )
+   Recombination(
+      SRH( DopingDep TempDependence )
+   )           
+}
+
+Plot{
+*--Density and Currents, etc
+   eDensity hDensity
+   TotalCurrent/Vector eCurrent/Vector hCurrent/Vector
+   eMobility hMobility
+   eVelocity hVelocity
+   eQuasiFermi hQuasiFermi
+
+*--Temperature 
+   eTemperature Temperature * hTemperature
+
+*--Fields and charges
+   ElectricField/Vector Potential SpaceCharge
+
+*--Doping Profiles
+   Doping DonorConcentration AcceptorConcentration
+
+*--Generation/Recombination
+   SRH Band2Band * Auger
+   AvalancheGeneration eAvalancheGeneration hAvalancheGeneration
+
+*--Driving forces
+   eGradQuasiFermi/Vector hGradQuasiFermi/Vector
+   eEparallel hEparallel eENormal hENormal
+
+*--Band structure/Composition
+   BandGap 
+   BandGapNarrowing
+   Affinity
+   ConductionBand ValenceBand
+   eQuantumPotential
+}
+
+Math {
+   Extrapolate
+   Iterations=40
+   Notdamped =100
+   RelErrControl
+   ErRef(Electron)=1.e10
+   ErRef(Hole)=1.e10
+}
+
+Solve {
+   *- Build-up of initial solution:
+   NewCurrentPrefix="init"
+   Coupled(Iterations=100){ Poisson }
+   Coupled{ Poisson Electron Hole eTemperature }
+  
+   *-  gate voltage sweep
+   NewCurrentPrefix=""
+   Quasistationary(
+      InitialStep=0.01 Increment=1.35 
+      MinStep=1e-5 MaxStep=0.5
+      Goal{ Name="gate" Voltage= 1 }
+   ){ Coupled{ Poisson Electron Hole eTemperature }
+      CurrentPlot(Time=(Range=(0 1) Intervals=20))
+   }
+}

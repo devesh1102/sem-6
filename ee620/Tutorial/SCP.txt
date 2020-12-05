@@ -1,0 +1,11 @@
+user id: EE620_groupnumber
+password: EE620
+host: 10.107.106.xx
+
+from server to local
+scp -r EE620_groupnumber@10.107.106.xx:/home/users/EE620_2019/EE620_groupnumber/ ./Directory
+scp EE620_groupnumber@10.107.106.xx:/home/users/EE620_2019/EE620_groupnumber/ ./filename
+
+from local to server
+scp -r ./Directory EE620_groupnumber@10.107.106.xx:/home/users/EE620_2019/EE620_groupnumber/
+scp ./filename EE620_groupnumber@10.107.106.xx:/home/users/EE620_2019/EE620_groupnumber/
